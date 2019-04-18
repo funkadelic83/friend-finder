@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+    <!-- Bootstrap Javascript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Survey Questions</h1>
+        <hr>
+        <h2>About You</h2>
+
+
+        <form id="surveyQuestions">
+            <div class="row">
+                <div class="col-12">
+                    <input type="text" name="name" id="name">
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-12">
+                    <input type="text" name="pic" id="image">
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <h3>Question 1</h3d>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>It is absolutely essential that the USA adopts a Medicare-for-All or similar universal healthcare
+                        plan.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+
+                    <select id="q1">
+                        <option value="1">1 - Strongly Disagree</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 - Strongly Agree</option>
+                    </select>
+
+
+
+                </div>
+            </div>
+
+
+
+
+
+            <div class="row">
+                <div class="col-12">
+                    <h3>Question 2</h3d>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>Assault rifles and other weapons of war should be banned -and possession by civilians should be
+                        punishable by lengthy prison terms.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+
+                    <select id="q2">
+                        <option value="1">1 - Strongly Disagree</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 - Strongly Agree</option>
+                    </select>
+
+                </div>
+            </div>
+
+
+
+
+            <div class="row">
+                <div class="col-12">
+                    <h3>Question 3</h3d>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>Illegal drugs should be legalized, regulated, and taxed to fund things that benefit society -like
+                        addiction treatment and education.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <select id="q3">
+                        <option value="1">1 - Strongly Disagree</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 - Strongly Agree</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-12">
+                    <h3>Question 4</h3d>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>The USA should not be the world's police. Military spending should be reduced to levels
+                        comparable to other developed nations. The wars in Iraq and Afghanistan should end.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <select id="q4">
+                        <option value="1">1 - Strongly Disagree</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 - Strongly Agree</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <h3>Question 5</h3d>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>Arming teachers is a good way to prevent school shootings.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <select id="q5">
+                        <option value="1">1 - Strongly Disagree</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 - Strongly Agree</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <h3>Question 6</h3d>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>The USA needs more public transit infrastructure -including light rail, high-speed inter-city
+                        rail -even at the expense of new highways.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <select id="q6">
+                        <option value="1">1 - Strongly Disagree</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 - Strongly Agree</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <h3>Question 7</h3d>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>New manufacturing an imports of consumer-grade internal combustion engines should be banned
+                        within 5 years.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <select id="q7">
+                        <option value="1">1 - Strongly Disagree</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 - Strongly Agree</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <h3>Question 8</h3d>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>The death penalty should be outlawed. Too many innocent people have been on executed, and it
+                        isn't a deterrant to crime.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <select id="q8">
+                        <option value="1">1 - Strongly Disagree</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 - Strongly Agree</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-12">
+                    <h3>Question 9</h3d>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>Abortion should be outlawed. Life begins at conception. Abortion should be punishable by prison
+                        terms.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <select id="q9">
+                        <option value="1">1 - Strongly Disagree</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 - Strongly Agree</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <h3>Question 10</h3d>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>Voting in every election should be mandatory. Non-compliance should incur a $250 fine.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <select id="q10">
+                        <option value="1">1 - Strongly Disagree</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 - Strongly Agree</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <h3>Question 11</h3d>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>A bold and transformative Green New Deal should be passed as soon as possible to wean us from
+                        fossil fuels. Halfway measures and compromsie solutions are insufficient.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <select id="q11">
+                        <option value="1">1 - Strongly Disagree</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 - Strongly Agree</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <h3>Question 12</h3d>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>Our prison population is too large. Private prisons should be banned, and non-violent low-level
+                        offenders should be released.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <select id="q12">
+                        <option value="1">1 - Strongly Disagree</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 - Strongly Agree</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <h3>Question 13</h3d>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>Social security should be privatized. The current system is unsustainable and unfair to people
+                        that die young.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <select id="q13">
+                        <option value="1">1 - Strongly Disagree</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 - Strongly Agree</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <h3>Question 14</h3d>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>Homeless people should simply be given modest, inexpensive housing (i.e. Tiny Houses) to get them
+                        off the streets. It is better to give them a modest foundation of stability than have them build
+                        tent cities downtown.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <select id="q14">
+                        <option value="1">1 - Strongly Disagree</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 - Strongly Agree</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <h3>Question 15</h3d>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>Illegal immgiration is a serious problem. It's time to get tough on border security. The USA is
+                        full and we can't take any more migrants workers or refugees.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <select id="q15">
+                        <option value="1">1 - Strongly Disagree</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 - Strongly Agree</option>
+                    </select>
+                </div>
+            </div>
+            <p></p>
+            <div class="row">
+                <div class="col-12">
+                    <button type="button" id="submit">Submit</button>
+                </div>
+            </div>
+
+
+
+        </form>
+
+    </div>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript">
+        $("#submit").on("click", function (event) {
+            event.preventDefault();
+            var newFriend = {
+                name: $("#name").val().trim(),
+                picture: $("#image").val().trim(),
+                a1: $("#q1").val(),
+                a2: $("#q2").val(),
+                a3: $("#q3").val(),
+                a4: $("#q4").val(),
+                a5: $("#q5").val(),
+                a6: $("#q6").val(),
+                a7: $("#q7").val(),
+                a8: $("#q8").val(),
+                a9: $("#q9").val(),
+                a10: $("#q10").val(),
+                a11: $("#q11").val(),
+                a12: $("#q12").val(),
+                a13: $("#q13").val(),
+                a14: $("#q14").val(),
+                a15: $("#q15").val()
+            };
+            console.log(newFriend);
+
+            $.post("/api/friends", newFriend)
+                .then(function (data) {
+                    console.log("works", data);
+                    alert("Adding friend...");
+                    $('#surveyQuestions').each(function () {
+                        this.reset();
+                    });
+                });
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>
