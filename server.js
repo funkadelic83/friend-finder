@@ -24,7 +24,7 @@ app.get("/api/allfriends", function (req, res) {
 app.post("/api/friends", function (req, res) {
     var newfriend = req.body;
     newfriend.routeName = newfriend.name.replace(/\s+/g, "").toLowerCase();
-    friendsImport.friends.push(newfriend);
+    friendsImport.friends.unshift(newfriend);
     res.json(newfriend);
     friendsImport.tryMe();
 });
