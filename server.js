@@ -7,16 +7,7 @@ var PORT = process.env.PORT || 3000;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-var friends = [
-    {
-        routeName: "mikedamanskis",
-        name: "Mike Damanskis",
-        picture: "https://yt3.ggpht.com/a-/AAuE7mAB95TO_OYZaTWlqgd8gupGnAivqV62jsYpFw=s900-mo-c-c0xffffffff-rj-k-no",
-        a1: 5,
-        a2: 5,
-        a3: 5
-    }
-];
+var friendsImport = require("./app/data/friends.js");
 
 app.get("/", function (req, res) {
     res.sendFile(path.join(__dirname, "/app/public/home.html"));
@@ -33,9 +24,9 @@ app.get("/api/allfriends", function (req, res) {
 app.post("/api/friends", function (req, res) {
     var newfriend = req.body;
     newfriend.routeName = newfriend.name.replace(/\s+/g, "").toLowerCase();
-    console.log(newfriend);
-    friends.push(newfriend);
+    friendsImport.friends.push(newfriend);
     res.json(newfriend);
+    friendsImport.tryMe();
 });
 
 app.listen(PORT, function () {

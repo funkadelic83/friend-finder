@@ -422,26 +422,33 @@
             var newFriend = {
                 name: $("#name").val().trim(),
                 picture: $("#image").val().trim(),
-                a1: $("#q1").val(),
-                a2: $("#q2").val(),
-                a3: $("#q3").val(),
-                a4: $("#q4").val(),
-                a5: $("#q5").val(),
-                a6: $("#q6").val(),
-                a7: $("#q7").val(),
-                a8: $("#q8").val(),
-                a9: $("#q9").val(),
-                a10: $("#q10").val(),
-                a11: $("#q11").val(),
-                a12: $("#q12").val(),
-                a13: $("#q13").val(),
-                a14: $("#q14").val(),
-                a15: $("#q15").val()
+                scores: [
+                    //ParseInt is useless here because only string data can be sent over http. Will delete.
+                    parseInt($("#q1").val()),
+                    parseInt($("#q2").val()),
+                    parseInt($("#q3").val()),
+                    parseInt($("#q4").val()),
+                    parseInt($("#q5").val()),
+                    parseInt($("#q6").val()),
+                    parseInt($("#q7").val()),
+                    parseInt($("#q8").val()),
+                    parseInt($("#q9").val()),
+                    parseInt($("#q10").val()),
+                    parseInt($("#q11").val()),
+                    parseInt($("#q12").val()),
+                    parseInt($("#q13").val()),
+                    parseInt($("#q14").val()),
+                    parseInt($("#q15").val())
+                ]
+
             };
+            //this console.logs an array of integers for the scores
             console.log(newFriend);
 
             $.post("/api/friends", newFriend)
                 .then(function (data) {
+
+                    //this console.logs an array of strings for the scores
                     console.log("works", data);
                     alert("Adding friend...");
                     $('#surveyQuestions').each(function () {
