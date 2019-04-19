@@ -4,7 +4,7 @@ This is a Heroku web app that will match the user with the closest match to thei
 
 Once the development is complete, this app will work as follows:
 
-Navigate to the [friend finder] (https://friend-finder-msd.herokuapp.com/)
+Navigate to the [friend finder] (https://friend-finder-msd.herokuapp.com/).
 Click the button to begin the quiz, then answer the questions and submit.
 In it's current form, the app will send the new user to the friends array.
 
